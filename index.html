@@ -641,32 +641,67 @@
         /* Responsive Styles */
         @media (max-width: 768px) {
             .container {
-                padding: 0 20px;
+                padding: 0 10px;
             }
-            
-            section {
-                padding: 70px 0;
+            header {
+                min-height: 80vh;
+                padding: 0;
             }
-            
-            .grid {
-                grid-template-columns: 1fr;
+            .header-content {
+                padding: 30px 0 10px 0;
+                text-align: center;
             }
-            
-            .contact-info {
-                flex-direction: column;
-            }
-            
             .hero-image {
-                width: 150px;
-                height: 150px;
+                width: 110px !important;
+                height: 110px !important;
+                margin-bottom: 18px;
+                background-size: cover;
+                background-position: center;
             }
-            
-            .personal-details {
-                grid-template-columns: 1fr;
+            .header-content h1 {
+                font-size: 2rem;
             }
-            
-            .core-competencies {
-                grid-template-columns: 1fr;
+            .header-content h2 {
+                font-size: 1.1rem;
+            }
+            .btn {
+                width: 100%;
+                margin: 8px 0;
+                font-size: 1rem;
+                padding: 12px 0;
+            }
+            .section-title {
+                font-size: 1.2rem;
+                margin-bottom: 24px;
+            }
+            section {
+                padding: 28px 0;
+            }
+            .grid, .education-cards-row, .certifications-cards-row {
+                flex-direction: column !important;
+                gap: 14px !important;
+            }
+            .card, .education-card, .certification-card {
+                max-width: 100% !important;
+                min-width: 0 !important;
+                padding: 14px 8px 10px 8px !important;
+            }
+            .experience-card, .experience-card-featured {
+                max-width: 100% !important;
+                min-width: 0 !important;
+                padding: 14px 8px 10px 8px !important;
+            }
+            .personal-row {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .personal-card {
+                max-width: 100%;
+                min-width: 0;
+                padding: 14px 8px 10px 8px;
+            }
+            .hero-grid-bg {
+                background-size: 40px 40px, 60px 60px;
             }
         }
     </style>
